@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style/index.css">
+  <link rel="stylesheet" href="./style/light-theme.css" id="theme-link">
+  <link rel="stylesheet" href="./style/dark-theme.css" id="theme-link">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+  
+  <title>Practice #2 | Todo app</title>
+
+</head>
+<body>
+    <div class="wrapper">
+      <div class="app-wrap">
+            <div class="title">
+                <span class="title-text">TODO</span>
+                <span id="theme-btn" class="theme-btn"></span>
+            </div>
+            <div class="header">
+                <input class="custom-checkbox" type="checkbox" id="check" disabled>
+                <input type="text" class="task-new" id="task-new" placeholder="Create a new todo...">
+            </div>
+            <div class="app">
+                <div class="body">
+                    <ul class="list" id="list"></ul>
+                    <div class="footer">
+                        <div class="info">
+                            <span class="info-number disable" id="js-all-tasks"></span>
+                            <span class="info-number disable" id="js-done-tasks"></span>
+                            <div class="info-item aside">
+                                <span class="info-text"><span class="info-number" id="js-left-tasks"></span> items left</span>
+                            </div>
+                            <div class="info-item main">
+                                <span class="filter" id="allFilter">All</span>
+                                <span class="filter" id="currentFilter">Active</span>
+                                <span class="filter" id="doneFilter">Completed</span>
+                            </div>
+                            <div class="info-item aside right">
+                                <span class="clear-completed" id="clear-completed">Clear Completed</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>              
+            </div>
+            <div class="basement">
+                <span class="filter" id="allFilter">All</span>
+                <span class="filter" id="currentFilter">Active</span>
+                <span class="filter" id="doneFilter">Completed</span>
+            </div>  
+            <div class="drag-n-drop">Drag and drop to reorder list</div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
